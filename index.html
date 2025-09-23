@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Manager with Progress Tracker</title>
+  <link rel="stylesheet" href="styles.css" />
+<script src="script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<body>
+  <div class="container">
+    <h1> Task Manager</h1>
+
+    <div class="task-input">
+      <input type="text" id="taskInput" placeholder="Enter a new task..." />
+      <button onclick="addTask()">Add</button>
+    </div>
+
+    <ul id="taskList"></ul>
+
+    <div class="progress-container">
+      <label>Progress:</label>
+      <div class="progress-bar">
+        <div id="progressFill"></div>
+      </div>
+      <p id="progressText">0% Completed</p>
+    </div>
+
+    <div id="chartContainer">
+      <h2>📊 Task Overview</h2>
+      <canvas id="taskChart"></canvas>
+      <div id="chartDetails" class="hidden"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
