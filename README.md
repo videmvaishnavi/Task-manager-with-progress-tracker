@@ -10,17 +10,17 @@ Many users struggle to manage daily tasks and track their progress effectively. 
 
 🚀 Features
 
-✅ Add new tasks
+✅ Add, edit, complete, and delete tasks
 
-✏️ Toggle task completion
+📅 Set deadlines with overdue alerts
 
-🗑️ Delete tasks
+🔥 Assign priority levels (High, Medium, Low)
 
-📊 Progress bar showing completion percentage
+🧠 Smart deadline suggestions based on task type
 
-🥧 Pie chart visualizing completed vs pending tasks
+📈 Visual progress bar and motivational forecast
 
-📈 Clickable chart reveals percentage breakdown
+📊 Pie chart overview of completed vs pending tasks
 
 💾 Tasks saved in browser using Local Storage
 
@@ -35,7 +35,6 @@ JavaScript – Functionality and interactivity
 Chart.js – Pie chart visualization
 
 Local Storage – Persistent data storage
-
 
 
 📦 Setup Instructions
@@ -54,17 +53,28 @@ script.js
 Or: Right-click index.html → Open in Browser
 
 
+📊 Progress Forecast
+
+Based on task completion percentage:
+
+- 🚀 75%+ → “You're on track to finish everything soon!”
+  
+- ⏳ 50%+ → “Keep going, you're halfway there!”
+  
+- 📌 Below 50% → “Let's pick up the pace!”
+  
+
+💡 Smart Suggestions
+
+Tasks like “Submit report” or “Team meeting” will auto-suggest deadlines to help users stay on track without manual input.
+  
 
 📌 Future Enhancements
 
 🌓 Dark/Light mode toggle
 
-📅 Task due dates and reminders
-
 📤 Export/Import tasks
 
-🔔 Notification alerts
 
-
-  👨‍💻 Author
-  Created by V.Vaishnavi
+👨‍💻 Author
+Created by Videm.Vaishnavi
