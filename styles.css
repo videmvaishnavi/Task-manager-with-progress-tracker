@@ -1,3 +1,4 @@
+/* Background and body styling */
 body {
   margin: 0;
   padding: 0;
@@ -18,9 +19,10 @@ body {
   100% {background-position: 0% 50%;}
 }
 
+/* Main container */
 .container {
   width: 100%;
-  max-width: 600px;
+  max-width: 700px;
   background: #000;
   border: 3px solid gold;
   border-radius: 25px;
@@ -29,19 +31,23 @@ body {
   text-align: center;
 }
 
+/* Headings and labels */
 h1, h2, label {
   color: gold;
 }
 
+/* Task input section */
 .task-input {
   display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-bottom: 25px;
 }
 
-#taskInput {
+#taskInput, #deadlineInput, #priorityInput {
   flex: 1;
   padding: 15px;
-  font-size: 18px;
+  font-size: 16px;
   border: none;
   border-radius: 15px;
   background-color: #fdf6e3;
@@ -49,9 +55,13 @@ h1, h2, label {
   outline: none;
 }
 
+#priorityInput {
+  min-width: 120px;
+}
+
+/* Buttons */
 button {
   padding: 15px 20px;
-  margin-left: 10px;
   background-color: gold;
   color: black;
   border: none;
@@ -65,6 +75,7 @@ button:hover {
   background-color: #ffd700;
 }
 
+/* Task list */
 ul {
   list-style: none;
   padding: 0;
@@ -81,6 +92,7 @@ li {
   justify-content: space-between;
   align-items: center;
   font-size: 18px;
+  transition: border 0.3s ease;
 }
 
 .completed {
@@ -88,6 +100,7 @@ li {
   color: #888;
 }
 
+/* Progress section */
 .progress-container {
   margin-top: 30px;
 }
@@ -116,6 +129,11 @@ li {
   font-size: 18px;
 }
 
+#forecastText {
+  margin-top: 5px;
+}
+
+/* Chart section */
 #chartContainer {
   margin-top: 40px;
 }
@@ -134,5 +152,3 @@ canvas {
 .hidden {
   display: none;
 }
-
-body { border: 5px solid red; }
