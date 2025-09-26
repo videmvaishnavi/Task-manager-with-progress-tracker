@@ -4,16 +4,21 @@
   <meta charset="UTF-8" />
   <title>Task Manager with Progress Tracker</title>
   <link rel="stylesheet" href="styles.css" />
-<script src="script.js" defer></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
   <div class="container">
-    <h1> Task Manager</h1>
+    <h1>Task Manager</h1>
 
     <div class="task-input">
       <input type="text" id="taskInput" placeholder="Enter a new task..." />
+      <input type="date" id="deadlineInput" />
+      <select id="priorityInput">
+        <option value="High">High 🔥</option>
+        <option value="Medium" selected>Medium ⚖️</option>
+        <option value="Low">Low 🐢</option>
+      </select>
       <button onclick="addTask()">Add</button>
     </div>
 
@@ -25,6 +30,7 @@
         <div id="progressFill"></div>
       </div>
       <p id="progressText">0% Completed</p>
+      <p id="forecastText" style="color: gold; font-style: italic;"></p>
     </div>
 
     <div id="chartContainer">
@@ -33,7 +39,5 @@
       <div id="chartDetails" class="hidden"></div>
     </div>
   </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
